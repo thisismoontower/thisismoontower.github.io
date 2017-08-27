@@ -51,14 +51,14 @@
 }*/
 
 
-#merch-pack{
+#merch-pack-comp{
   width:20%;
   display:block;
   margin: 0 auto;
   text-align: center;
   margin-top: 200px;
 }
-#merch-link{
+.merch-link{
   color:white;
 }
 
@@ -73,7 +73,16 @@
   display:block;
   margin: 0 auto;
 }
-
+@media (max-width: 400px) {
+  #merch-pack-comp{
+    display: none;
+  }
+}
+@media (min-width: 400px) {
+  #merch-pack-phone{
+    display: none;
+  }
+}
 
 </style>
 
@@ -81,9 +90,6 @@
 
 <body>
 
-<video autoplay loop id="video-background" muted plays-inline>
-    <source src="" type="video/mp4">
-  </video>
 
 
 <!-- 
@@ -96,17 +102,19 @@
   </div>
 
   <div id ="details">
-    <h1>26 AUGUST 2017</h1>
+    <h1>THANK YOU FOR COMING</h1>
     
-    <h1>9:30 PM</h1>
+    <h1>NEXT PARTY WILL BE ANNOUNCED SOON</h1>
     
-    <h1>2712 MENLO AVE</h1>
   </div>
 
-  <div id="merch-pack">
-    <a id="merch-link" href="double-click.zip">Merch Pack</a>
+  <div id="merch-pack-comp">
+    <a class="merch-link" href="MOONTOWER-double-click.zip">Download Our Music (free)</a>
   </div>
-
+  <div id="merch-pack-phone">
+    <a class="merch-link" href="LayWithMe_8_27_2017.mp3">Download Our Music (free)</a>
+  </div>
+	
   <div id='socials'>
     <a href="https://www.instagram.com/thisismoontower/"><img id="insta" src="insta-icon.png"/></a>
   </div>
